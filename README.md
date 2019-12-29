@@ -1,4 +1,4 @@
-# Express Node Mongoose
+# [Express Node Mongoose [Template]](https://github.com/ayyshim/express_node_mongoose)
 
 This is a QUICK boilerplate/base template repository for common _express_, _node_, and _mongoose_ projects. Project is structured in very simple that even a beginner can understand.
 

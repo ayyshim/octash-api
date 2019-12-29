@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 exports.connect = (url, runApp) => {
   mongoose.connect(url, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   });
 
   const connection = mongoose.connection;
