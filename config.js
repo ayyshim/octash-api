@@ -9,5 +9,6 @@ module.exports = {
   port: process.env.PORT || 5000,
   jwt_secret: process.env.JWT_SECRET_CODE || "secret123",
   encrypter: process.env.ENCRYPTER || "encryptingkey",
-  userbase_secret: process.env.USERBASE_SECRET_KEY || "userbasesecretkey"
+  userbase_secret: process.env.USERBASE_SECRET_KEY || "userbasesecretkey",
+  host: process.env.HOST || "http://localhost:5000/"
 };

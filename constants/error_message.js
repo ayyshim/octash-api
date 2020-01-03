@@ -14,8 +14,12 @@ module.exports = {
     PROJECT_API_IS_UNDEFINED_OR_NULL: "Project api key is undefined or nulled.",
     PROJECT_API_INVALID: "Invalid project api.",
     USERBASE_EMAIL_EXIST: "Email is already in use.",
-    USERBASE_INVALID_EMAIL: "Email can not be found to be associated with any user in our database.",
-    USERBASE_INVALID_PASSWORD: "Password do not match to the corresponding user email.",
-    USERBASE_INVALID_USER: "User not found."
+    USERBASE_INVALID_EMAIL:
+      "Email can not be found to be associated with any user in our database.",
+    USERBASE_INVALID_PASSWORD:
+      "Password do not match to the corresponding user email.",
+    USERBASE_INVALID_USER: "User not found.",
+    CASKET_FOLDER_NOT_FOUND: "Folder do not exist.",
+    CASKET_FILE_NOT_FOUND: "File do not exist."
   }
 };
