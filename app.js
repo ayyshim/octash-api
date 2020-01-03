@@ -20,9 +20,9 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // Routes
-app.use("/test", routes.test);
 app.use("/user", routes.user);
 app.use("/project", mw.isProtected, routes.project);
+app.use("/database", mw.isProtected, routes.database);
 
 // Database connection
 database.connect(mongo_db_url, () =>

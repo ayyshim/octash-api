@@ -18,11 +18,12 @@ async function list(uid) {
 
 async function new_project(uid, name) {
   const owner = await User.findOne({ _id: uid });
-
+  const api = random_id.generate(17);
   const newProject = new Project({
     name,
     unique_id: random_id.generate(),
-    ownership: uid
+    ownership: uid,
+    api
   });
 
   // Save project

@@ -1,25 +1,33 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const ProjectSchema = new Schema({
+const ProjectSchema = new Schema(
+  {
     name: {
-        type: String,
-        required: true,
-        trim: true,
+      type: String,
+      required: true,
+      trim: true
     },
     unique_id: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true
+      type: String,
+      required: true,
+      trim: true,
+      lowercase: true
     },
     ownership: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    },
+    api: {
+      type: String,
+      required: true,
+      trim: true
     }
-}, {
+  },
+  {
     timestamps: true
-});
+  }
+);
 
-module.exports = mongoose.model('Project', ProjectSchema);
+module.exports = mongoose.model("Project", ProjectSchema);
