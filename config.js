@@ -8,5 +8,6 @@ module.exports = {
     "mongodb://localhost:27017/test",
   port: process.env.PORT || 5000,
   jwt_secret: process.env.JWT_SECRET_CODE || "secret123",
-  encrypter: process.env.ENCRYPTER  || "encryptingkey"
+  encrypter: process.env.ENCRYPTER || "encryptingkey",
+  userbase_secret: process.env.USERBASE_SECRET_KEY || "userbasesecretkey"
 };

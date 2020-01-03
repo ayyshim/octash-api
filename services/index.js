@@ -1,5 +1,6 @@
 module.exports = {
   UserService: require("./user"),
   ProjectService: require("./project"),
-  DatabaseService: require("./database")
+  DatabaseService: require("./database"),
+  UserbaseService: require("./userbase")
 };

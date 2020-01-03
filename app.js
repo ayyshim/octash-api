@@ -22,7 +22,8 @@ app.use(cookieParser());
 // Routes
 app.use("/user", routes.user);
 app.use("/project", mw.isProtected, routes.project);
-app.use("/database", mw.isProtected, routes.database);
+app.use("/database", mw.selectProject, routes.database);
+app.use("/userbase", mw.selectProject, routes.userbase);
 
 // Database connection
 database.connect(mongo_db_url, () =>

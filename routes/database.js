@@ -4,8 +4,6 @@ const { DatabaseService } = require("../services");
 module.exports = router => {
   const databaseRouter = router;
 
-  databaseRouter.use(selectProject);
-
   databaseRouter.post("/data/:col/set", async (req, res) => {
     const { project_id } = req;
     const { col } = req.params;

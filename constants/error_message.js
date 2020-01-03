@@ -12,6 +12,10 @@ module.exports = {
     UNAUTHORIZED: "You are not authorized to perform this action.",
     PROJECT_NOT_FOUND: "Project not found.",
     PROJECT_API_IS_UNDEFINED_OR_NULL: "Project api key is undefined or nulled.",
-    PROJECT_API_INVALID: "Invalid project api."
+    PROJECT_API_INVALID: "Invalid project api.",
+    USERBASE_EMAIL_EXIST: "Email is already in use.",
+    USERBASE_INVALID_EMAIL: "Email can not be found to be associated with any user in our database.",
+    USERBASE_INVALID_PASSWORD: "Password do not match to the corresponding user email.",
+    USERBASE_INVALID_USER: "User not found."
   }
 };
