@@ -63,10 +63,9 @@ async function checkCredential(project, email, password) {
 
   // generate auth token
   const payload = {
-    uid: user.id
+    uid: user.id,
+    email: user._doc.email
   };
-
-  const token = jwt.sign(payload, userbase_secret);
 
   await user.update({
     last_logged: currentDateAndTime()
@@ -75,9 +74,7 @@ async function checkCredential(project, email, password) {
   return {
     status: success.status.OK,
     msg: success.message.SUCCESS,
-    payload: {
-      token
-    }
+    payload
   };
 }
 
